@@ -1,0 +1,2620 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C49NC77DX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0C49NC77DX');
+    </script>
+
+    <meta name="msvalidate.01" content="D92DB8C5351F9C870B130DA46A243EBB">
+
+    <title>Measures of Shape</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in the measures of shape.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
+              mathematics, statistics, descriptive statistics, mean, median, mode, midrange, range, variance, 
+              standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
+              standard error, measures of center, summation, sample size, population size, measures of central tendency, 
+              measures of dispersion, measures of spread, measures of variation, measures of variability, 
+              measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
+              measures of relative standing, boxplots, measures of shape">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 bisque" id="quotes">
+        <h1>Solved Examples: Measures of Shape</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <div class="w3-container">
+
+        <!-- Image in top left corner --
+            <a href="https://statistical-reasoning.appspot.com/" title="Samuel Dominic Chukwuemeka">
+                <img src="images/samueldominic4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" title="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer.
+        <br><br>
+        <mark>For SAT Students</mark> <br>
+        Any question labeled SAT-C is a question that allows a calculator. <br>
+        Any question labeled SAT-NC is a question that does not allow a calculator. <br><br>
+        <mark>For JAMB Students</mark> <br>
+        Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+        <br><br>
+
+        <b>Notatable Notes About Mean and Standard Deviation.</b> <br>
+
+        (1.) Given an initial dataset: <br>
+        If the value of a variable is decreased, the total sum of the frequencies and the values of the variable,
+        &Sigma;<i>fx</i> of the new dataset will decrease, hence the mean and the standard deviation of the new dataset
+        will decrease. <br>
+        The mean and the standard deviation will decrease.
+        <br><br>
+        (2.) Given an initial dataset: <br>
+        If a new value, lower than the minimum value of the initial dataset is included in it: <br>
+        The mean will decrease and the standard deviation will increase.
+        <br><br>
+        (3.) Given an initial dataset: <br>
+        If a new value, higher than the maximum value of the initial dataset is included in it: <br>
+        The mean will increase and the standard deviation will decrease.
+        <br><br>
+        Solve all questions. <br>
+        Show all work.
+    </div>
+
+    <div class="w3-center">
+        <h2>The Empirical Rule</h2>
+        <img src="images/empirical-Rule.png" alt="Empirical Rule">
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) The histogram shows the ages of 25 CEOs listed on a certain website. <br>
+                Based on the​ distribution, what is the approximate mean age of the CEOs in this data​ set? <br>
+                Write a sentence in context​ (using words in the​ question) interpreting the estimated mean.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number1.png" alt="Number 1">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS1')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS1">
+                    <br>
+                    The distribution is​ symmetric, so the typical​ value, known as the​ mean, is located in the center
+                    of the histogram. <br>
+                    The typical CEO is between 56 and 60 years.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>GCSE</b> The tibia is the bone that connects the knee to the ankle bone. <br>
+                The lengths of the tibia bones in <b>modern-day</b> adult makes have a normal distribution with mean
+                36.0 cm and
+                standard deviation 2.8 cm <br>
+                <b>Almost all</b> adult male tibia bones have lengths that are between <i>a</i> cm and <i>b</i> cm <br>
+                Calculate the values of <i>a</i> and <i>b</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS2')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS2">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 99.7% of the adult male tibia bones have lengths within
+                    (below and above) 3 standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 36.0\; cm \\[3ex]
+                    \sigma = 2.8\;cm \\[3ex]
+                    3\sigma = 3(2.8) = 8.4\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \mu - 3\sigma \\[3ex]
+                    36 - 8.4 \\[3ex]
+                    27.6 \\[3ex]
+                    a = 27.6\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \mu + 3\sigma \\[3ex]
+                    36 + 8.4 \\[3ex]
+                    44.4 \\[3ex]
+                    b = 44.4\;cm \\[3ex]
+                    $
+                    About 99.7% of adult male tibia bones have lengths between 27.6 cm and 44.4 cm
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) The prices​ (in $​ thousands) of a sample of​ three-bedroom homes for sale in State A and State B
+                are shown in the table below.
+                <br>
+                <table class="noborder">
+                    <tr>
+                        <th style="width: 50%; text-align: left;">State A</th>
+                        <th style="width: 50%; text-align: left;">State B</th>
+                    </tr>
+                    <tr>
+                        <td>291</td>
+                        <td>192</td>
+                    </tr>
+                    <tr>
+                        <td>336</td>
+                        <td>211</td>
+                    </tr>
+                    <tr>
+                        <td>129</td>
+                        <td>414</td>
+                    </tr>
+                    <tr>
+                        <td>182</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>115</td>
+                        <td>197</td>
+                    </tr>
+                    <tr>
+                        <td>172</td>
+                        <td>291</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td>127</td>
+                    </tr>
+                </table>
+                <br>
+                (I.) In a few​ sentences, compare the prices of these homes. <br>
+                (II.) Answer the questions of which state had the most expensive homes and which had the most
+                variability in home prices.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS3')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS3">
+                    <br>
+                    <table class="w3-center">
+                        <caption>State A</caption>
+                        <tr>
+                            <th>Price, $x$ (<span>$</span> thousands)</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$291$</td>
+                            <td>$1$</td>
+                            <td>$291$</td>
+                            <td>$90.28571429$</td>
+                            <td>$8151.510204$</td>
+                            <td>$8151.510204$</td>
+                        </tr>
+                        <tr>
+                            <td>$336$</td>
+                            <td>$1$</td>
+                            <td>$336$</td>
+                            <td>$135.2857143$</td>
+                            <td>$18302.22449$</td>
+                            <td>$18302.22449$</td>
+                        </tr>
+                        <tr>
+                            <td>$129$</td>
+                            <td>$1$</td>
+                            <td>$129$</td>
+                            <td>$-71.71428571$</td>
+                            <td>$5142.938776$</td>
+                            <td>$5142.938776$</td>
+                        </tr>
+                        <tr>
+                            <td>$182$</td>
+                            <td>$1$</td>
+                            <td>$182$</td>
+                            <td>$-18.71428571$</td>
+                            <td>$350.2244898$</td>
+                            <td>$350.2244898$</td>
+                        </tr>
+                        <tr>
+                            <td>$115$</td>
+                            <td>$1$</td>
+                            <td>$115$</td>
+                            <td>$-85.71428571$</td>
+                            <td>$7346.938776$</td>
+                            <td>$7346.938776$</td>
+                        </tr>
+                        <tr>
+                            <td>$172$</td>
+                            <td>$1$</td>
+                            <td>$172$</td>
+                            <td>$-28.71428571$</td>
+                            <td>$824.5102041$</td>
+                            <td>$824.5102041$</td>
+                        </tr>
+                        <tr>
+                            <td>$180$</td>
+                            <td>$1$</td>
+                            <td>$180$</td>
+                            <td>$-20.71428571$</td>
+                            <td>$429.0816327$</td>
+                            <td>$429.0816327$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 7$</td>
+                            <td>$\Sigma fx = 1405$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 40547.42857$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    \underline{State\;A} \\[3ex]
+                    (a.) \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{1405}{7} \\[5ex]
+                    = 200.7142857 \\[3ex]
+                    \approx 200.71...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[5ex]
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{40547.42857}{7 - 1} \\[5ex]
+                    = \dfrac{40547.42857}{6} \\[5ex]
+                    = 6757.904762 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{6757.904762} \\[3ex]
+                    = 82.2064764 \\[3ex]
+                    \approx 82.21...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[3ex]
+                    $
+                    <table class="w3-center">
+                        <caption>State B</caption>
+                        <tr>
+                            <th>Price, $x$ (<span>$</span> thousands)</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$192$</td>
+                            <td>$1$</td>
+                            <td>$192$</td>
+                            <td>$-31.14285714$</td>
+                            <td>$969.877551$</td>
+                            <td>$969.877551$</td>
+                        </tr>
+                        <tr>
+                            <td>$211$</td>
+                            <td>$1$</td>
+                            <td>$211$</td>
+                            <td>$-12.14285714$</td>
+                            <td>$147.4489796$</td>
+                            <td>$147.4489796$</td>
+                        </tr>
+                        <tr>
+                            <td>$414$</td>
+                            <td>$1$</td>
+                            <td>$414$</td>
+                            <td>$190.8571429$</td>
+                            <td>$36426.44898$</td>
+                            <td>$36426.44898$</td>
+                        </tr>
+                        <tr>
+                            <td>$130$</td>
+                            <td>$1$</td>
+                            <td>$130$</td>
+                            <td>$-93.14285714$</td>
+                            <td>$8675.591837$</td>
+                            <td>$8675.591837$</td>
+                        </tr>
+                        <tr>
+                            <td>$197$</td>
+                            <td>$1$</td>
+                            <td>$197$</td>
+                            <td>$-26.14285714$</td>
+                            <td>$683.4489796$</td>
+                            <td>$683.4489796$</td>
+                        </tr>
+                        <tr>
+                            <td>$291$</td>
+                            <td>$1$</td>
+                            <td>$291$</td>
+                            <td>$67.85714286$</td>
+                            <td>$4604.591837$</td>
+                            <td>$4604.591837$</td>
+                        </tr>
+                        <tr>
+                            <td>$127$</td>
+                            <td>$1$</td>
+                            <td>$127$</td>
+                            <td>$-96.14285714$</td>
+                            <td>$9243.44898$</td>
+                            <td>$9243.44898$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 7$</td>
+                            <td>$\Sigma fx = 1562$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 60750.85714$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    \underline{State\;A} \\[3ex]
+                    (a.) \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{1562}{7} \\[5ex]
+                    = 223.1428571 \\[3ex]
+                    \approx 223.14...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[5ex]
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{60750.85714}{7 - 1} \\[5ex]
+                    = \dfrac{60750.85714}{6} \\[5ex]
+                    = 10125.14286 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{10125.14286} \\[3ex]
+                    = 100.6237688 \\[3ex]
+                    \approx 100.62...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[3ex]
+                    $
+                    (I.) This implies that: <br>
+                    The typical price​ (in $​ thousands) for a​ three-bedroom home in State A is <span>$</span>200.71
+                    <br>
+                    The typical price​ (in $​ thousands) for a​ three-bedroom home in State B is <span>$</span>223.14
+                    <br>
+                    Therefore, the typical price for a​ three-bedroom home is higher in State B.
+                    <br><br>
+                    The standard deviation of price​ (in <span>$</span> thousands) for a​ three-bedroom home in State A
+                    is <span>$</span>82.21 <br>
+                    The standard deviation of price​ (in <span>$</span> thousands) for a​ three-bedroom home in State B
+                    is <span>$</span>100.62 <br>
+                    Therefore, the standard deviation of price for a​ three-bedroom home is higher in State B.
+                    <br><br>
+                    (II.) Therefore, the prices for​ three-bedroom homes tend to be lower and have less variation in
+                    State A than in State B.  
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) The histogram shows the number of televisions in the homes of 90 community college students. <br>
+                Judging from the​ histogram, what is the approximate mean number of televisions in the homes in this​
+                collection? Explain.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number4.png" alt="Number 4">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS4')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS4">
+                    <br>
+                    The mean number of televisions per home is between 3 and 4. <br>
+                    The mean is near the​ center, which is due to the fact that the histogram is roughly symmetric.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) The table shows the lengths​ (in miles) of major rivers in North America.
+                <br>
+                <table class="noborder">
+                    <tr>
+                        <th style="width: 50%; text-align: left;">River</th>
+                        <th style="width: 50%; text-align: left;">Length (in miles)</th>
+                    </tr>
+                    <tr>
+                        <td>Colorado</td>
+                        <td>1450</td>
+                    </tr>
+                    <tr>
+                        <td>Mackenzie</td>
+                        <td>2635</td>
+                    </tr>
+                    <tr>
+                        <td>Mississippi-Missouri-Red Rock</td>
+                        <td>3710</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande</td>
+                        <td>1900</td>
+                    </tr>
+                    <tr>
+                        <td>Yukon</td>
+                        <td>1979</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Determine and interpret​ (report in​ context) the mean. <br>
+                (b.) Determine the standard deviation. <br>
+                (c.) Which river contributes most to the size of the standard​ deviation? <br>
+                (d.) If the St. Lawrence River​ (length 800 ​miles) were included in the data​ set, explain how the mean
+                and standard deviation from parts​ (a) and​ (b) would be​ affected? <br>
+                (e.) Recalculate the mean and the standard deviation including the St. Lawrence River.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS5')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS5">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>Length, $x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$1450$</td>
+                            <td>$1$</td>
+                            <td>$1450$</td>
+                            <td>$-884.8$</td>
+                            <td>$782871.04$</td>
+                            <td>$782871.04$</td>
+                        </tr>
+                        <tr>
+                            <td>$2635$</td>
+                            <td>$1$</td>
+                            <td>$2635$</td>
+                            <td>$300.2$</td>
+                            <td>$90120.04$</td>
+                            <td>$90120.04$</td>
+                        </tr>
+                        <tr>
+                            <td>$3710$</td>
+                            <td>$1$</td>
+                            <td>$3710$</td>
+                            <td>$1375.2$</td>
+                            <td>$1891175.04$</td>
+                            <td>$1891175.04$</td>
+                        </tr>
+                        <tr>
+                            <td>$1900$</td>
+                            <td>$1$</td>
+                            <td>$1900$</td>
+                            <td>$-434.8$</td>
+                            <td>$189051.04$</td>
+                            <td>$189051.04$</td>
+                        </tr>
+                        <tr>
+                            <td>$1979$</td>
+                            <td>$1$</td>
+                            <td>$1979$</td>
+                            <td>$-355.8$</td>
+                            <td>$126593.64$</td>
+                            <td>$126593.64$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td>$\Sigma fx = 11674$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 15286.8$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{11674}{5} \\[5ex]
+                    = 2334.8 \\[3ex]
+                    $
+                    The mean length of the major rivers in North America is approximately 2335 miles (rounded to the
+                    nearest integer).
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{3079810.8}{5 - 1} \\[5ex]
+                    = \dfrac{3079810.8}{4} \\[5ex]
+                    = 769952.7 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{769952.7} \\[3ex]
+                    = 877.4694866 \\[3ex]
+                    $
+                    The standard deviation is approximately 877 miles. (value is rounded to the nearest integer)
+                    <br><br>
+                    (c.) Mississippi-Missouri-Red Rock River contributes most to the size of the standard deviation
+                    because it is the furthest from the mean.
+                    <br><br>
+                    (d.) Given an initial dataset: <br>
+                    If a new value, lower than the minimum value of the initial dataset is added to it: <br>
+                    The mean will decrease and the standard deviation will increase.
+                    <br><br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>Length, $x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$1450$</td>
+                            <td>$1$</td>
+                            <td>$1450$</td>
+                            <td>$-629$</td>
+                            <td>$395641$</td>
+                            <td>$395641$</td>
+                        </tr>
+                        <tr>
+                            <td>$2635$</td>
+                            <td>$1$</td>
+                            <td>$2635$</td>
+                            <td>$556$</td>
+                            <td>$309136$</td>
+                            <td>$309136$</td>
+                        </tr>
+                        <tr>
+                            <td>$3710$</td>
+                            <td>$1$</td>
+                            <td>$3710$</td>
+                            <td>$1631$</td>
+                            <td>$2660161$</td>
+                            <td>$2660161$</td>
+                        </tr>
+                        <tr>
+                            <td>$1900$</td>
+                            <td>$1$</td>
+                            <td>$1900$</td>
+                            <td>$-179$</td>
+                            <td>$32041$</td>
+                            <td>$32041$</td>
+                        </tr>
+                        <tr>
+                            <td>$1979$</td>
+                            <td>$1$</td>
+                            <td>$1979$</td>
+                            <td>$-100$</td>
+                            <td>$10000$</td>
+                            <td>$10000$</td>
+                        </tr>
+                        <tr>
+                            <td>$800$</td>
+                            <td>$1$</td>
+                            <td>$800$</td>
+                            <td>$-1279$</td>
+                            <td>$1635841$</td>
+                            <td>$1635841$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td>
+                                $
+                                \Sigma fx \\[3ex]
+                                = 11674 + 800 \\[3ex]
+                                = 12474
+                                $
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 5042820$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    (e.) \\[3ex]
+                    n = 6 \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{12474}{6} \\[5ex]
+                    = 2079 \\[3ex]
+                    $
+                    The new mean is 2079 miles.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{5042820}{6 - 1} \\[5ex]
+                    = \dfrac{5042820}{5} \\[5ex]
+                    = 1008564 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{1008564} \\[3ex]
+                    = 1004.272871 \\[3ex]
+                    $
+                    The standard deviation is approximately 1004 miles. (value is rounded to the nearest integer)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) The table shows the location and number of floors in some of the tallest buildings in the world.
+                <br>
+                <table class="w3-center noborder" style="width: 50%;">
+                    <tr>
+                        <th style="width: 50%;">City</th>
+                        <th style="width: 50%;">Number of Floors</th>
+                    </tr>
+                    <tr>
+                        <td>City 1</td>
+                        <td>164</td>
+                    </tr>
+                    <tr>
+                        <td>City 2</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>City 3</td>
+                        <td>114</td>
+                    </tr>
+                    <tr>
+                        <td>City 4</td>
+                        <td>102</td>
+                    </tr>
+                    <tr>
+                        <td>City 5</td>
+                        <td>102</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Determine and interpret​ (report in​ context) the mean number of floors in this data set. <br>
+                (b.) Determine and interpret the standard deviation of the number of floors in this data set. <br>
+                (c.) Which of the given observations is farthest from the mean and therefore contributes most to the
+                standard​ deviation?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS6')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS6">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    n = 5 \\[3ex]
+                    Mean = \bar{x} = \dfrac{\Sigma Floors}{n} \\[5ex]
+                    = \dfrac{164 + 123 + 114 + 102 + 102}{5} \\[5ex]
+                    = \dfrac{605}{5} \\[5ex]
+                    = 121 \\[3ex]
+                    $
+                    The typical number of floors of the tallest buildings is 121 floors.
+                    <br><br>
+                    (b.) <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>Floor, $x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$164$</td>
+                            <td>$1$</td>
+                            <td>$164$</td>
+                            <td>$43$</td>
+                            <td>$1849$</td>
+                            <td>$1849$</td>
+                        </tr>
+                        <tr>
+                            <td>$123$</td>
+                            <td>$1$</td>
+                            <td>$123$</td>
+                            <td>$2$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$114$</td>
+                            <td>$1$</td>
+                            <td>$114$</td>
+                            <td>$-7$</td>
+                            <td>$49$</td>
+                            <td>$49$</td>
+                        </tr>
+                        <tr>
+                            <td>$102$</td>
+                            <td>$2$</td>
+                            <td>$204$</td>
+                            <td>$-19$</td>
+                            <td>$361$</td>
+                            <td>$722$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 2624$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{2624}{5 - 1} \\[5ex]
+                    = \dfrac{2624}{4} \\[5ex]
+                    = 656 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{656} \\[3ex]
+                    = 25.61249695 \\[3ex]
+                    $
+                    The standard deviation of the number of floors of the tallest buildings is approximately 25.6 floors
+                    (value is rounded to one decimal place).
+                    <br><br>
+                    (c.) The number farthest from the mean that contributes the most to the given standard deviation is
+                    164, which represents the number of floors in City 1.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Three histograms and three boxplots are given below. <br>
+                (a.) Report the shape of each histogram. <br>
+                (b.) Match each histogram with the corresponding boxplot​ (A, B, or​ C)
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number7-1.png" alt="Number 7-1">
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number7-2.png" alt="Number 7-2">
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number7-3.png" alt="Number 7-3">
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number7.png" alt="Number 7">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS7')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS7">
+                    <br>
+                    (a.) Histogram 1 shows a right-skewed distribution. <br>
+                    Histogram 2 shows a symmetric distribution. <br>
+                    Histogram 3 shows a left-skewed distribution.
+                    <br><br>
+                    (b.) Boxplot A corresponds to Histogram 3 <br>
+                    Boxplot B corresponds to Histogram 2 <br>
+                    Boxplot C corresponds to Histogram 1
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>GCSE</b> [<i>Continued from Question (2.)</i>] <br>
+                The lengths of tibia bones in <b>modern-day</b> adult <b>females</b> have a normal distribution with
+                mean 33.8 cm
+                and standard deviation 2.2 cm <br>
+                (a.) A tibia bone is discovered measuring 34.5 cm <br>
+                Alice says the bone is more likely to be from an adult female than an adult male. <br>
+                Evaluate Alice's statement. <br><br>
+                $
+                Use\;\;standardized\;\;score = \dfrac{value - mean}{standard\;\;deviation} \\[5ex]
+                $
+                (b.) In fact, the bone in <b>part(a.)</b> was discovered on an old Roman site and is estimated as being
+                about 1900 years old. <br>
+                Is the conclusion made in <b>part(a.)</b> likely to be valid? <br>
+                Explain your answer.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS8')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS8">
+                    <br>
+                    The question wants us to evaluate Alice's statement using the <i>z</i>-score formula <br><br>
+                    $
+                    (a.) \\[3ex]
+                    \underline{Adult\;\;Female} \\[3ex]
+                    \mu = 33.8\;cm \\[3ex]
+                    \sigma = 2.2\;cm \\[3ex]
+                    x = 34.5 \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{34.5 - 33.8}{2.2} \\[5ex]
+                    z = \dfrac{0.7}{2.2} \\[5ex]
+                    z = 0.3181818182 \approx 0.32 \\[5ex]
+                    \underline{Adult\;\;Male} \\[3ex]
+                    \mu = 36\;cm \\[3ex]
+                    \sigma = 2.8\;cm \\[3ex]
+                    x = 34.5 \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{34.5 - 36}{2.8} \\[5ex]
+                    z = -\dfrac{1.5}{2.8} \\[5ex]
+                    z = -0.5357142857 \approx -0.54 \\[3ex]
+                    $
+                    (b.) <br>
+                    A data value is <b>usual</b> if $-2.00 \lt z-score \lt 2.00$ <br>
+                    A data value is <b>unusual</b> if $z-score \lt -2.00$ <u>or</u> if $z-score \gt 2.00$ <br>
+                    Adult Female: Because $-2 \lt 0.32 \lt 2$; the data value is usual <br>
+                    Adult Male: Because $-2 \lt -0.54 \lt 2$; the data value is also usual <br>
+                    Both data values are usual. <br>
+                    Hence, there is insufficient evidence to verify Alice' statement. <br><br>
+                    However, <br>
+                    Because of the positive <i>z</i>-score for the adult female
+                    (a positive <i>z</i>-score indicates that the data value is above the mean), the bone may likely be
+                    from an adult female than
+                    from an adult male.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) <b>GCSE</b> [<i>Continued from Questions (2.) and (8.)</i>] <br>
+                A number of samples of tibia length for modern-day adult <b>females</b> were collected. <br>
+                The histogram is drawn to represent the <b>mean values</b> of these samples. <br>
+                Which normal distribution curve should the histogram most look like?
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number9.png" alt="Number 9">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS9')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS9">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 99.7% of the adult male tibia bones have lengths within
+                    (below and above) 3
+                    standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 33.8\; cm \\[3ex]
+                    \sigma = 2.2\;cm \\[3ex]
+                    3\sigma = 3(2.2) = 6.6\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \mu - 3\sigma \\[3ex]
+                    33.8 - 6.6 \\[3ex]
+                    = 27.2\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \mu + 3\sigma \\[3ex]
+                    33.8 + 6.6 \\[3ex]
+                    = 40.4\;cm \\[3ex]
+                    $
+                    About 99.7% of adult female tibia bones have lengths between 27.2 cm and 40.4 cm
+                    The option that matches this result is Option (A.)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) Babies born after 40 weeks gestation have a mean length of 52.6 centimeters​ (about 20.7 ​inches).
+                <br>
+                Babies born one month early have a mean length of 46.4 cm. <br>
+                Assume both standard deviations are 2.7 cm and the distributions and unimodal and symmetric.
+                <br><br>
+                (a.) Find the standardized score​ (z-score), relative to babies born after 40 weeks​ gestation, for a
+                baby with a birth length of 45 cm.
+                <br><br>
+                (b.) Find the standardized score for a birth length of 45 cm for a child born one month​ early, using
+                46.4 as the mean.
+                <br><br>
+                (c.) For which group is a birth length of 45 cm more​ common? <br>
+                Explain what that means. Unusual​ z-scores are far from 0.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS10')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS10">
+                    <br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \underline{Born\;\;after\;\;40\;\;weeks\;\;gestation} \\[3ex]
+                    \mu = 52.6\;cm \\[3ex]
+                    \sigma = 2.7\;cm \\[3ex]
+                    (a.) \\[3ex]
+                    x = 45\;cm \\[3ex]
+                    z = \dfrac{45 - 52.6}{2.7} \\[5ex]
+                    z = -2.814814815 \\[3ex]
+                    z \approx -2.81 \\[5ex]
+                    (b.) \\[3ex]
+                    \underline{Born\;\;one\;\;month\;\;early} \\[3ex]
+                    \mu = 46.4\;cm \\[3ex]
+                    \sigma = 2.7\;cm \\[3ex]
+                    x = 45\;cm \\[3ex]
+                    z = \dfrac{45 - 46.4}{2.7} \\[5ex]
+                    z = -0.5185185185 \\[3ex]
+                    z \approx -0.52 \\[3ex]
+                    $
+                    (c.) &minus;0.52 is closer to 0 than &minus;2.81 <br>
+                    &minus;2.81 is far from 0, hence it is unusual. <br>
+                    A birth length of 45 cm is more common for babies born one month early. <br>
+                    This makes sense because babies grow during​ gestation, and babies born one month early have had
+                    less time to grow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) The table shows the heights of some of the tallest roller coasters in a certain area.
+                <br>
+                <table class="w3-center noborder" style="width: 50%;">
+                    <tr>
+                        <th style="width: 50%;">Roller Coaster</th>
+                        <th style="width: 50%;">Height (in feet)</th>
+                    </tr>
+                    <tr>
+                        <td>Roller Coaster 1</td>
+                        <td>443</td>
+                    </tr>
+                    <tr>
+                        <td>Roller Coaster 2</td>
+                        <td>428</td>
+                    </tr>
+                    <tr>
+                        <td>Roller Coaster 3</td>
+                        <td>417</td>
+                    </tr>
+                    <tr>
+                        <td>Roller Coaster 4</td>
+                        <td>332</td>
+                    </tr>
+                    <tr>
+                        <td>Roller Coaster 5</td>
+                        <td>306</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Determine and interpret​ (report in​ context) the mean height of these roller coasters. <br>
+                (b.) Determine and interpret the standard deviation of the height of these roller coasters. <br>
+                (c.) If roller coaster 1 was only 428 feet​ high, how would this affect the mean and standard deviation
+                you calculated in​ (a) and​ (b)? <br>
+                (d.) Recalculate the mean and standard deviation using 428 feet as the height of roller coaster 1.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS11')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS11">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>Floor, $x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$443$</td>
+                            <td>$1$</td>
+                            <td>$443$</td>
+                            <td>$57.8$</td>
+                            <td>$3340.84$</td>
+                            <td>$3340.84$</td>
+                        </tr>
+                        <tr>
+                            <td>$428$</td>
+                            <td>$1$</td>
+                            <td>$428$</td>
+                            <td>$42.8$</td>
+                            <td>$1831.84$</td>
+                            <td>$1831.84$</td>
+                        </tr>
+                        <tr>
+                            <td>$417$</td>
+                            <td>$1$</td>
+                            <td>$417$</td>
+                            <td>$31.8$</td>
+                            <td>$1011.24$</td>
+                            <td>$1011.24$</td>
+                        </tr>
+                        <tr>
+                            <td>$332$</td>
+                            <td>$1$</td>
+                            <td>$332$</td>
+                            <td>$-53.2$</td>
+                            <td>$2830.24$</td>
+                            <td>$2830.24$</td>
+                        </tr>
+                        <tr>
+                            <td>$306$</td>
+                            <td>$1$</td>
+                            <td>$306$</td>
+                            <td>$-79.2$</td>
+                            <td>$6272.64$</td>
+                            <td>$6272.64$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td>$\Sigma fx = 1926$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 15286.8$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{1926}{5} \\[5ex]
+                    = 385.2 \\[3ex]
+                    $
+                    The typical height of the tallest roller coasters in this area is 385.2 feet.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{15286.8}{5 - 1} \\[5ex]
+                    = \dfrac{15286.8}{4} \\[5ex]
+                    = 3821.7 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{3821.7} \\[3ex]
+                    = 61.81989971 \\[3ex]
+                    $
+                    The standard deviation of the height of the tallest roller coasters in this area is approximately
+                    61.8 feet. (value is rounded to 1 decimal place)
+                    <br><br>
+                    (c.) Given an initial dataset: <br>
+                    If the value of a variable is decreased, the total sum of the frequencies and the values of the
+                    variable, &Sigma;<i>fx</i> of the new dataset will decrease, hence the mean and the standard
+                    deviation of the new dataset will decrease. <br>
+                    The mean and standard deviation will decrease.
+                    <br><br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>Floor, $x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$428$</td>
+                            <td>$1$</td>
+                            <td>$428$</td>
+                            <td>$45.8$</td>
+                            <td>$2097.64$</td>
+                            <td>$2097.64$</td>
+                        </tr>
+                        <tr>
+                            <td>$428$</td>
+                            <td>$1$</td>
+                            <td>$428$</td>
+                            <td>$45.8$</td>
+                            <td>$2097.64$</td>
+                            <td>$2097.64$</td>
+                        </tr>
+                        <tr>
+                            <td>$417$</td>
+                            <td>$1$</td>
+                            <td>$417$</td>
+                            <td>$34.8$</td>
+                            <td>$1211.04$</td>
+                            <td>$1211.04$</td>
+                        </tr>
+                        <tr>
+                            <td>$332$</td>
+                            <td>$1$</td>
+                            <td>$332$</td>
+                            <td>$-50.2$</td>
+                            <td>$2520.04$</td>
+                            <td>$2520.04$</td>
+                        </tr>
+                        <tr>
+                            <td>$306$</td>
+                            <td>$1$</td>
+                            <td>$306$</td>
+                            <td>$-76.2$</td>
+                            <td>$5806.44$</td>
+                            <td>$5806.44$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td>$\Sigma fx = 1911$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 13732.8$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{1911}{5} \\[5ex]
+                    = 382.2 \\[3ex]
+                    $
+                    The new mean is 382.2 feet.
+                    <br><br>
+                    $
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{13732.8}{5 - 1} \\[5ex]
+                    = \dfrac{13732.8}{4} \\[5ex]
+                    = 3433.2 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{3433.2} \\[3ex]
+                    = 58.593515 \\[3ex]
+                    $
+                    To one decimal place, the new standard deviation is approximately 58.6 feet.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) Assume that​ women's heights have a distribution that is symmetric and​ unimodal, with a mean of
+                69 ​inches, and the standard deviation is 1.5 inches. <br>
+                Assume that​ men's heights have a distribution that is symmetric and​ unimodal, with mean of 72 inches
+                and a standard deviation of 3 inches.
+                <br><br>
+                (a.) What​ women's height corresponds to a​ z-score of -1.70​?
+                <br><br>
+                (b.) Professional basketball player Evelyn Akhator is 75 inches tall and plays in the WNBA​ (women's
+                league). <br>
+                Professional basketball player Draymond Green is 79 inches tall and plays in the NBA​ (men's league).
+                <br>
+                Compared to his or her​ peers, who is​ taller?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS12')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS12">
+                    <br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \underline{Women} \\[3ex]
+                    \mu = 69\;in \\[3ex]
+                    \sigma = 1.5\;in \\[3ex]
+                    \underline{Men} \\[3ex]
+                    \mu = 72\;in \\[3ex]
+                    \sigma = 3\;in \\[3ex]
+                    (a.) \\[3ex]
+                    z = -1.7 \\[3ex]
+                    x = z\sigma + \mu \\[3ex]
+                    x = -1.7(1.5) + 69 \\[3ex]
+                    x = 66.45\;inches
+                    (b.) \\[3ex]
+                    \underline{Evelyn} \\[3ex]
+                    x = 75\;in \\[3ex]
+                    z = \dfrac{75 - 69}{1.5} \\[5ex]
+                    z = 4 \\[3ex]
+                    z = 4.00 \\[3ex]
+                    \underline{Draymond} \\[3ex]
+                    x = 79\;in \\[3ex]
+                    z = \dfrac{79 - 72}{3} \\[5ex]
+                    z = 2.33333333 \\[3ex]
+                    z \apprx 2.33 \\[3ex]
+                    4.00 \gt 2.33 \\[3ex]
+                    $
+                    Compared to his or her​ peers, Evelyn is taller because she is 4 standard deviations above the mean
+                    for women while
+                    Draymond is only 2.33 standard deviations above the mean for men.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) Three histograms and three boxplots are given below. <br>
+                Match each histogram​ (X, Y, and​ Z) with the corresponding boxplot​ (A, B, or​ C). <br>
+                Explain your reasoning.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number13.png" alt="Number 13">
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number13-1.png" alt="Number 13-1">
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number13-2.png" alt="Number 13-2">
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number13-3.png" alt="Number 13-3">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS13')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS13">
+                    <br>
+                    Boxplot P corresponds to Histogram Z because both show a right-skewed distribution that has at least
+                    one outlier.
+                    <br><br>
+                    Boxplot M corresponds to Histogram X because both show a symmetric distribution that has no
+                    outliers.
+                    <br><br>
+                    Boxplot C corresponds to Histogram Y because both show a right-skewed distribution that no outliers.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>ACT</b> The standard normal probability distribution function (&mu; = 0 and &sigma; = 1) is
+                graphed in the
+                standard (<i>x, y</i>) coordinate plane below. <br>
+                Which of the following percentages is closest to the percent of the data points that are within 2
+                standard deviations of
+                the mean in any normal distribution?
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number14.png" alt="Number 14">
+                <br><br>
+                $
+                A.\;\; 50\% \\[3ex]
+                B.\;\; 68\% \\[3ex]
+                C.\;\; 90\% \\[3ex]
+                D.\;\; 95\% \\[3ex]
+                E.\;\; 99\% \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMS14')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS14">
+                    <br>
+                    <b>Empirical Rule</b>: 68 &ndash; 95 &ndash; 99.7% Rule <br>
+                    Part of the Empirical Rule states that 95% of the data points are within (below and above) 2
+                    standard
+                    deviations from the mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) Assume the heights of the Golden State Warriors basketball team players have a bell-shaped
+                distribution with mean of 175 cm and
+                standard deviation of 7 cm.
+                <br><br>
+                (a.) Analyze this information using the Empirical Rule.
+                <br><br>
+                (b.) (i) Draw the normal distribution curve for the information. <br>
+                (ii) Indicate the area of each region in the curve.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS15')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS15">
+                    <br>
+                    Treat the dataset as a sample <br>
+                    But you may choose to treat it as a population if you wish <br>
+                    (a.) <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br><br>
+                    $
+                    \bar{x} = 175\;cm \\[3ex]
+                    s = 7\;cm \\[3ex]
+                    1s = 1(7) = 7\;cm \\[3ex]
+                    2s = 2(7) = 14\;cm \\[3ex]
+                    3s = 3(7) = 21\; cm \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;below\;\;the\;\;mean} \\[3ex]
+                    \bar{x} - 1s \\[3ex]
+                    175 - 7 \\[3ex]
+                    168\;cm \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;above\;\;the\;\;mean} \\[3ex]
+                    \bar{x} + 1s \\[3ex]
+                    175 + 7 \\[3ex]
+                    182\;cm \\[3ex]
+                    $
+                    This impies that 68% of the basketball team players have heights between 168 cm and 182 cm <br><br>
+                    $
+                    \underline{2\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \bar{x} - 2s \\[3ex]
+                    175 - 14 \\[3ex]
+                    161\;cm \\[3ex]
+                    \underline{2\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \bar{x} + 2s \\[3ex]
+                    175 + 14 \\[3ex]
+                    189\;cm \\[3ex]
+                    $
+                    This impies that 95% of the basketball team players have heights between 161 cm and 189 cm <br><br>
+                    $
+                    \underline{3\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \bar{x} - 3s \\[3ex]
+                    175 - 21 \\[3ex]
+                    154\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \bar{x} + 3s \\[3ex]
+                    175 + 21 \\[3ex]
+                    196\;cm \\[3ex]
+                    $
+                    This impies that 99.7% of the basketball team players have heights between 154 cm and 196 cm
+                    <br><br>
+                    (b.) (i) <br>
+                    <img src="images/MeasuresShape/Answers/Number15.png" alt="Number 15">
+                    <br><br>
+                    $
+                    Center = \bar{x} = 175 \\[3ex]
+                    Between\;\;168\;\;and\;\;182 = 68\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    Between\;\;168\;\;and\;\;175 = \dfrac{68}{2} = 34\% \\[5ex]
+                    Similarly:\;\;between\;\;175\;\;and\;\;182 = 34\% \\[3ex]
+                    Between\;\;161\;\;and\;\;189 = 95\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    Between\;\;161\;\;and\;\;175 = \dfrac{95}{2} = 47.5\% \\[5ex]
+                    \implies \\[3ex]
+                    Between\;\;161\;\;and\;\;168 = 47.5 - 34 = 13.5\% \\[3ex]
+                    Similarly:\;\;between\;\;175\;\;and\;\;189 = 47.5\% \\[3ex]
+                    Similarly:\;\;between\;\;182\;\;and\;\;189 = 13.5\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    Between\;\;154\;\;and\;\;196 = \dfrac{99.7}{2} = 49.85\% \\[5ex]
+                    \implies \\[3ex]
+                    Between\;\;154\;\;and\;\;161 = 49.85 - (34 + 13.5) = 49.85 - 47.5 = 2.35\% \\[3ex]
+                    Similarly:\;\;between\;\;175\;\;and\;\;196 = 49.85\% \\[3ex]
+                    Similarly:\;\;between\;\;189\;\;and\;\;196 = 2.35\% \\[3ex]
+                    Total\;\;area = 100\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    \le 175 = \dfrac{100}{2} = 50\% \\[5ex]
+                    \ge 175 = \dfrac{100}{2} = 50\% \\[5ex]
+                    \implies \\[3ex]
+                    \lt 154 = 50 - (2.35 + 13.5 + 34) = 50 - 49.85 = 0.15\% \\[3ex]
+                    Similarly:\;\; \gt 196 = 0.15\% \\[3ex]
+                    \lt 161 = 2.35 + 0.15 = 2.5\% \\[3ex]
+                    Similarly:\;\; \gt 189 = 2.5\% \\[3ex]
+                    \lt 168 = 13.5 + 2.35 + 0.15 = 16\% \\[3ex]
+                    Similarly:\;\; \gt 182 = 16\% \\[3ex]
+                    Between\;\;161\;\;and\;\;182 = 13.5 + 34 + 34 = 81.5\% \\[3ex]
+                    $
+                    <i>
+                        Ask students to complete the rest of the regions.
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) Assume that​ men's heights have a distribution that is symmetrical and​ unimodal, with a mean of
+                62 inches and a standard deviation of 2.5 inches.
+                <br><br>
+                (a.) What​ men's height corresponds to a​ z-score of ​1.20?
+                <br><br>
+                (b.) What​ men's height corresponds to a​ z-score of ​&minus;1.20?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS16')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS16">
+                    <br>
+                    $
+                    \mu = 62\;in \\[3ex]
+                    \sigma = 2.5\;in \\[3ex]
+                    (a.) \\[3ex]
+                    z = 1.2 \\[3ex]
+                    x = z\sigma + \mu \\[3ex]
+                    x = 1.2(2.5) + 62 \\[3ex]
+                    x = 65\;inches \\[3ex]
+                    (b.) \\[3ex]
+                    z = -1.2 \\[3ex]
+                    x = z\sigma + \mu \\[3ex]
+                    x = -1.2(2.5) + 62 \\[3ex]
+                    x = 59\;inches
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionMS17')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) Distributions of gestation periods​ (lengths of​ pregnancy) for a particular animal are roughly​
+                bell-shaped. <br>
+                The mean gestation period for this animal is 270 ​days, and the standard deviation is 5 days for females
+                who go into spontaneous labor. <br>
+                Which is more​ unusual, a baby being born 5 days early or a baby being born 5 days​ late? Explain.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS18')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS18">
+                    <br>
+                    $
+                    \mu = 270\;days \\[3ex]
+                    \sigma = 5\;days \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \underline{5\;days\;\;early} \\[3ex]
+                    x = 270 - 5 = 265\;days \\[3ex]
+                    z = \dfrac{265 - 270}{5} \\[5ex]
+                    z = \dfrac{-5}{5} \\[5ex]
+                    z = -1 \\[3ex]
+                    \underline{5\;days\;\;late} \\[3ex]
+                    x = 270 + 5 = 275\;days \\[3ex]
+                    z = \dfrac{275 - 270}{5} \\[5ex]
+                    z = \dfrac{5}{5} \\[5ex]
+                    z = 1 \\[3ex]
+                    $
+                    Both z-scores are within usual values <br>
+                    Both z-scores are the same. <br>
+                    Both events are equally likely.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <button class="solutions" onclick="solutions('solutionMS19')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS19">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>HSC Mathematics Standard 2</b> In a particular country, the birth weight of babies is normally
+                distributed with a mean
+                of 3000 grams. <br>
+                It is known that 95% of these babies have a birth weight between 1600 grams and 4400 grams. <br>
+                One of these babies has a birth weight of 3497 grams. <br>
+                What is the <i>z</i>-score of this baby's birth weight?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS20')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS20">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 95% of these babies have a birth weight within (below and
+                    above) 2 standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 3000\;grams \\[3ex]
+                    \sigma = ? \\[3ex]
+                    \mu - 2\sigma = 1600 \\[3ex]
+                    \mu - 1600 = 2\sigma \\[3ex]
+                    2\sigma = \mu - 1600 \\[3ex]
+                    2\sigma = 3000 - 1600 \\[3ex]
+                    2\sigma = 1400 \\[3ex]
+                    \sigma = \dfrac{1400}{2} \\[5ex]
+                    \sigma = 700\;grams \\[3ex]
+                    \underline{Confirm\;\;the\;\;value\;\;of\;\;the\;\;standard\;\;deviation} \\[3ex]
+                    \mu + 2\sigma = 4400 \\[3ex]
+                    2\sigma = 4400 - \mu \\[3ex]
+                    2\sigma = 4400 - 3000 \\[3ex]
+                    2\sigma = 1400 \\[3ex]
+                    \sigma = \dfrac{1400}{2} \\[5ex]
+                    \sigma = 700\;grams \\[3ex]
+                    \underline{For\;\;the\;\;baby} \\[3ex]
+                    x = 3497\;grams \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{3497 - 3000}{700} \\[5ex]
+                    z = \dfrac{497}{700} \\[5ex]
+                    z = 0.71
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-reasoning.appspot.com/DescriptiveStatistics/measuresShape.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) <b>HSC Mathematics Standard 2</b> The scores on an examination are normally distributed with a
+                mean of 70 and a
+                standard deviation of 6 <br>
+                Michael received a score on the examination between the lower quartile and the upper quartile of the
+                scores. <br>
+                Which shaded region most accurately represents where Michael's score lies?
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number21.png" alt="Number 21">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS21')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS21">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 68% of the adult male tibia bones have lengths within (below
+                    and above) 1
+                    standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 70 \\[3ex]
+                    \sigma = 6 \\[3ex]
+                    1s = 1(6) = 6 \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;below\;\;the\;\;mean} \\[3ex]
+                    \mu - 1\sigma \\[3ex]
+                    70 - 6 \\[3ex]
+                    64 \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;above\;\;the\;\;mean} \\[3ex]
+                    \mu + 1\sigma \\[3ex]
+                    70 + 6 \\[3ex]
+                    76 \\[3ex]
+                    $
+                    This impies that 68% of the examination scores are between 64 and 76 <br>
+                    That means that: 34% of the scores are between 64 and 70 <br>
+                    Similarly, 34% of the scores are between 70 and 76 <br>
+                    But Option B is not the correct answer <br><br>
+
+                    One of the properties of the normal curve is that:
+                    <b>the mean, median, and mode of a normal curve is the same.</b> <br>
+                    This implies that the median is also 70 <br>
+                    median = 70 = 50% of the scores <br>
+                    lower quartile = 25% of the scores = 25% below the median <br>
+                    25% is less than 34% <br>
+                    This implies that 25% below the median is less than 64 <br>
+                    upper quartile = 75% of the scores = 25% above the median <br>
+                    Similarly, 25% is less than 34% <br>
+                    This implies that 25% above the median is less than 76 <br>
+                    So, we are looking for the curve whose shaded area is less than 64 (from the center to the left) and
+                    is also less
+                    than
+                    76 (from the center to the right) <br>
+                    This is because 25% is less than 34% (from the center to the left) and 25% is less than 34% (from
+                    the center to the
+                    right) <br>
+                    This implies that the correct answer is Option A
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) Babies born weighing 2500 grams​ (about 5.5​ pounds) or less are called​ low-birth-weight babies,
+                and this condition sometimes indicates health problems for the infant. <br>
+                The mean birth weight for children born in a certain country is about 3417 grams​ (about 7.5 ​pounds).
+                <br>
+                The mean birth weight for babies born one month early is 2604 grams. <br>
+                Suppose both standard deviations are 460 grams. <br>
+                Also assume that the distribution of birth weights is roughly unimodal and symmetric.
+                <br><br>
+                (a.) Find the standardized score​ (z-score), relative to all births in the​ country, for a baby with a
+                birth weight of 2500 grams.
+                <br><br>
+                (b.) Find the standardized score for a birth weight of 2500 grams for a child born one month​ early,
+                using 2604 as the mean.
+                <br><br>
+                (c.) For which group is a birth weight of 2500 grams more​ common? <br>
+                Explain what that implies. Unusual​ z-scores are far from 0.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS22')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS22">
+                    <br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \underline{Born\;\;in\;\;a\;\;certain\;\;country} \\[3ex]
+                    \mu = 3417\;grams \\[3ex]
+                    \sigma = 460\;grams \\[3ex]
+                    (a.) \\[3ex]
+                    x = 2500\;grams \\[3ex]
+                    z = \dfrac{2500 - 3417}{460} \\[5ex]
+                    z = -1.993478261 \\[3ex]
+                    z \approx -1.99 \\[5ex]
+                    (b.) \\[3ex]
+                    \underline{Born\;\;one\;\;month\;\;early} \\[3ex]
+                    \mu = 2604\;grams \\[3ex]
+                    \sigma = 460\;grams \\[3ex]
+                    x = 2500\;grams \\[3ex]
+                    z = \dfrac{2500 - 2604}{460} \\[5ex]
+                    z = -0.2260869565 \\[3ex]
+                    z \approx -0.23 \\[3ex]
+                    $
+                    (c.) &minus;0.23 is closer to 0 than &minus;1.99 <br>
+                    A birth weight of 2500 grams is more common for babies born one month early. <br>
+                    This makes sense because babies gain weight during​ gestation, and babies born one month early had
+                    less time to gain weight.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <button class="solutions" onclick="solutions('solutionMS23')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) An IQ test has a mean of 103 and a standard deviation of 5. <br>
+                Which is more​ unusual, an IQ of 108 or an IQ of 95?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS24')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS24">
+                    <br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \mu = 103 \\[3ex]
+                    \sigma = 5 \\[3ex]
+                    1st:\;\;x = 108 \\[3ex]
+                    z = \dfrac{108 - 103}{5} \\[5ex]
+                    z = 1 \\[3ex]
+                    z = 1.00 \\[3ex]
+                    2nd:\;\;x = 95 \\[3ex]
+                    z = \dfrac{95 - 103}{5} \\[5ex]
+                    z = -1.6 \\[3ex]
+                    z = -1.60 \\[3ex]
+                    $
+                    1.00 and &minus;1.60 are within usual values. <br>
+                    However, &minus;160 is further from 0 than 1.00. <br>
+                    An IQ of 95 is more unusual because its corresponding​ z-score, &minus;1.6 is further from 0 than
+                    the corresponding​ z-score of 1 for an IQ of 108.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.) The quantitative scores on a test are approximately normally distributed with a mean of 500 and a
+                standard deviation of 100. <br>
+                On the horizontal axis of the graph, indicate the test scores that correspond with the provided
+                z-scores. <br>
+                Answer the questions using only your knowledge of the Empirical rule and symmetry.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number25a.jpg" alt="Number 25a">
+                <br><br>
+                (a.) Indicate the test scores that correspond with the provided <i>z</i>-scores.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number25b.jpg" alt="Number 25b">
+                <br><br>
+                (b.) Roughly what percentage of students earn quantitative test scores more than 500? <br>
+                (c.) Roughly what percentage of students earn quantitative test scores between 400 and 600? <br>
+                (d.) Roughly what percentage of students earn quantitative test scores more than 800? <br>
+                (e.) Roughly what percentage of students earn quantitative test scores less than 200? <br>
+                (f.) Roughly what percentage of students earn quantitative test scores between 300 and 700? <br>
+                (g.) Roughly what percentage of students earn quantitative test scores between 700 and 800?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS25')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS25">
+                    <br>
+                    $
+                    \mu = 500 \\[3ex]
+                    \sigma = 100 \\[3ex]
+                    \underline{Within\;\;1\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - \sigma = 500 - 100 = 400 \\[3ex]
+                    \mu + \sigma = 500 + 100 = 600 \\[3ex]
+                    Between\;\;400\;\;and\;\;600 = 68\% \\[3ex]
+                    \underline{Within\;\;2\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 2\sigma = 500 - 2(100) = 500 - 200 = 300 \\[3ex]
+                    \mu + 2\sigma = 500 + 2(100) = 500 + 200 = 700 \\[3ex]
+                    Between\;\;300\;\;and\;\;700 = 95\% \\[3ex]
+                    \underline{Within\;\;3\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 3\sigma = 500 - 3(100) = 500 - 300 = 200 \\[3ex]
+                    \mu + 3\sigma = 500 + 3(100) = 500 + 300 = 800 \\[3ex]
+                    Between\;\;200\;\;and\;\;800 = 99.7\% \\[3ex]
+                    $
+                    (a.) The test scores that correspond with the provided <i>z</i>-scores is: Option <b>B.</b>
+                    <br><br>
+                    <img src="images/MeasuresShape/Answers/Number25.jpg" alt="Number 25">
+                    <br><br>
+                    (b.) Scores more than 500 is every score above the mean <br>
+                    The percentage of students that earn quantitative test scores more than 500 is 50%
+                    <br><br>
+                    (c.) Scores between 400 and 600 are scores within 1 standard deviation from the mean <br>
+                    The percentage of students that earn quantitative test scores between 400 and 600 is 68%
+                    <br><br>
+                    (d.) Scores more than 800 are scores more than 3 standard deviations above the mean <br>
+                    The percentage of students that earn quantitative test scores more than 800 is 0.15%
+                    <br><br>
+                    (e.) Scores less than 200 are scores less than 3 standard deviations below the mean <br>
+                    The percentage of students that earn quantitative test scores less than 200 is 0.15%
+                    <br><br>
+                    (f.) Scores between 300 and 700 are scores within 2 standard deviations from the mean <br>
+                    The percentage of students that earn quantitative test scores between 300 and 700 is 95%
+                    <br><br>
+                    (g.) Scores between 700 and 800 are scores in-between 2 standard deviations above the mean
+                    <u>and</u> 3 standard
+                    deviations above the mean <br>
+                    The percentage of students that earn quantitative test scores between 700 and 800 is 2.35%
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) Answer the following questions. <br>
+                Show all work.
+                <br><br>
+                (I.) In 2017 a pollution index was calculated for a sample of cities in the eastern states using data on
+                air and water pollution. <br>
+                Assume the distribution of pollution indices is unimodal and symmetric. <br>
+                The mean of the distribution was 45.9 points with a standard deviation of 11.3 points. <br>
+                (a.) What percentage of eastern cities would you expect to have a pollution index between 23.3 and 68.5
+                ​points? <br>
+                (b.) What percentage of eastern cities would you expect to have a pollution index between 34.6 and 57.2
+                ​points? <br>
+                (c.) The pollution index for an eastern​ city, in​ 2017, was 56.1 points. <br>
+                Based on this​ distribution, was this unusually​ high? Explain.
+                <br><br>
+                (II.) In​ 2011, the mean property crime rate​ (per 100,000​ people) for 10 northeastern regions of a
+                certain country was 2416. <br>
+                The standard deviation was 396. <br>
+                Assume the distribution of crime rates is unimodal and symmetric. <br>
+                (a.) What percentage of northeastern regions would you expect to have property crime rates between 2020
+                and 2812​? <br>
+                (b.) What percentage of northeastern regions would you expect to have property crime rates between 1624
+                and ​3208? <br>
+                (c.) If someone guessed that the property crime rate in one northeastern region was 9004​, would this
+                number be consistent with the data​ set? <br>
+                First find the upper bound for three standard deviations from the mean. <br>
+                Is 9004 consistent with the data​ set?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS26')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS26">
+                    <br>
+                    (I.)
+                    $
+                    \bar(x) = 45.9\;points \\[3ex]
+                    s = 11.3\;points \\[3ex]
+                    (a.) \\[3ex]
+                    1\;standard\;\;deviation\;\;from\;\;the\;\;mean \\[3ex]
+                    \bar{x} - s \\[3ex]
+                    45.9 - 11.3 = 34.6 \\[3ex]
+                    \bar{x} + s \\[3ex]
+                    45.9 + 11.3 = 57.2 \\[3ex]
+                    2\;standard\;\;deviations\;\;from\;\;the\;\;mean \\[3ex]
+                    \bar{x} - 2s \\[3ex]
+                    45.9 - 2(11.3) = 23.3 \\[3ex]
+                    \bar{x} + 2s \\[3ex]
+                    45.9 + 11.3 = 68.5 \\[3ex]
+                    $
+                    95% of eastern cities are expected to have a pollution index between 23.3 and 68.5 ​points <br>
+                    68% of eastern cities are expected to have a pollution index between 34.6 and 57.2 ​points
+                    <br><br>
+                    (c.) No, because 56.1 falls within two standard deviations away from the​ mean, and it is therefore
+                    not an unusually high pollution index.
+                    <br><br>
+                    (II.)
+                    $
+                    \bar(x) = 2416 \\[3ex]
+                    s = 396 \\[3ex]
+                    (a.) \\[3ex]
+                    1\;standard\;\;deviation\;\;from\;\;the\;\;mean \\[3ex]
+                    \bar{x} - s \\[3ex]
+                    2416 - 396 = 2020 \\[3ex]
+                    \bar{x} + s \\[3ex]
+                    2416 + 396 = 2812 \\[3ex]
+                    $
+                    The percentage of northeastern regions expected to have property crime rates between 2020 and 2812
+                    is 68%
+                    <br><br>
+                    $
+                    2\;standard\;\;deviations\;\;from\;\;the\;\;mean \\[3ex]
+                    \bar{x} - 2s \\[3ex]
+                    2416 - 2(396) = 1624 \\[3ex]
+                    \bar{x} + 2s \\[3ex]
+                    2416 + 2(396) = 3208 \\[3ex]
+                    $
+                    The percentage of northeastern regions expected to have property crime rates between 1624 and ​3208
+                    is 95%
+                    <br><br>
+                    $
+                    (c.) \\[3ex]
+                    3\;standard\;\;deviations\;\;from\;\;the\;\;mean \\[3ex]
+                    \bar{x} - 3s \\[3ex]
+                    Lower\;\;bound= 2416 - 3(396) = 1228 \\[3ex]
+                    \bar{x} + 3s \\[3ex]
+                    Upper\;\;bound = 2416 + 3(396) = 3604 \\[3ex]
+                    $
+                    Is 9004 consistent with the data​ set? <br>
+                    No, because 9004 falls well above three standard deviations away from the​ mean, and it is therefore
+                    unlikely that a region would have this value.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+
+                <button class="solutions" onclick="solutions('solutionMS27')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS27">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <button class="solutions" onclick="solutions('solutionMS28')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS28">
+                    <br>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionMS29')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS30')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <button class="solutions" onclick="solutions('solutionMS31')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS31">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS32')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS32">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionMS33')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS34')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionMS35')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS36')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionMS37')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS38')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS38">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.) The dotplot shows heights of college​ women; the mean is 64 inches​ (5 feet 4​ inches) and the
+                standard deviation is 3 inches.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number39.png" alt="Number 39">
+                <br><br>
+                (a.) What is the​ z-score for a height of 67 inches ​(5 feet 7 inches​)?
+                <br><br>
+                (b.) What is the height of a woman with a​ z-score of ​&minus;2?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS39')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS39">
+                    <br>
+                    We can solve this question in at least two ways <br>
+                    Use any approach you prefer.
+                    <br><br>
+                    Based on the dotplot: <br>
+                    (a.) The​ z-score for a height of 67 inches = 1
+                    <br><br>
+                    (b.) The height of a woman with a​ z-score of ​&minus;2 = 58 inches
+                    <br><br>
+                    Based on Calculations: <br><br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \mu = 64\;inches \\[3ex]
+                    \sigma = 3\;inches \\[3ex]
+                    (a.) \\[3ex]
+                    x = 67\;inches \\[3ex]
+                    z = \dfrac{67 - 64}{3} \\[5ex]
+                    z = 1 \\[3ex]
+                    (b.) z = -2 \\[3ex]
+                    x = z\sigma + \mu \\[3ex]
+                    x = -2(3) + 64 \\[3ex]
+                    x = 58\;inches
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS40')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-reasoning.appspot.com/DescriptiveStatistics/measuresShape.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionMS41')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS42')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <button class="solutions" onclick="solutions('solutionMS43')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS43">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS44')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <button class="solutions" onclick="solutions('solutionMS45')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS45">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS46')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <button class="solutions" onclick="solutions('solutionMS47')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS47">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS48')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS48">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.)
+                <button class="solutions" onclick="solutions('solutionMS49')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS49">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS50')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS50">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (51.)
+                <button class="solutions" onclick="solutions('solutionMS51')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS51">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (52.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS52')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS52">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (53.)
+                <button class="solutions" onclick="solutions('solutionMS53')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS53">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (54.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS54')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS54">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (55.)
+                <button class="solutions" onclick="solutions('solutionMS55')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS55">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (56.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS56')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS56">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (57.)
+                <button class="solutions" onclick="solutions('solutionMS57')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS57">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (58.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS58')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS58">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (59.) Assume that the lengths of pregnancy for humans are approximately normally distributed, with a
+                mean of 267 days and a standard deviation of 10 days. <br>
+                Use the Empirical Rule to answer the following questions. <br>
+                Do not use the technology or the Normal table. <br>
+                Begin by labeling the horizontal axis of the graph with lengths, using the given mean and standard
+                deviation.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number59.jpg" alt="Number 59">
+                <br><br>
+                (a.) Roughly what percentage of pregnancies last more than 267 days? <br>
+                (b.) Roughly what percentage of pregnancies last between 267 and 277 days? <br>
+                (c.) Roughly what percentage of pregnancies last less than 237 days? <br>
+                (d.) Roughly what percentage of pregnancies last between 247 and 287 days? <br>
+                (e.) Roughly what percentage of pregnancies last longer than 287 days? <br>
+                (f.) Roughly what percentage of pregnancies last longer than 297 days?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS59')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS59">
+                    <br>
+                    Based on the Empirical Rule and the Empirical Rule Table above: <br><br>
+                    $
+                    \mu = 267\;\;days \\[3ex]
+                    \sigma = 10\;\;days \\[3ex]
+                    \underline{Within\;\;1\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - \sigma = 267 - 10 = 257 \\[3ex]
+                    \mu + \sigma = 267 + 10 = 277 \\[3ex]
+                    Between\;\;257\;\;and\;\;277 = 68\% \\[3ex]
+                    \underline{Within\;\;2\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 2\sigma = 267 - 2(10) = 267 - 20 = 247 \\[3ex]
+                    \mu + 2\sigma = 267 + 2(10) = 267 + 20 = 287 \\[3ex]
+                    Between\;\;247\;\;and\;\;287 = 95\% \\[3ex]
+                    \underline{Within\;\;3\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 3\sigma = 267 - 3(10) = 267 - 30 = 237 \\[3ex]
+                    \mu + 3\sigma = 267 + 3(10) = 267 + 30 = 297 \\[3ex]
+                    Between\;\;237\;\;and\;\;297 = 99.7\% \\[3ex]
+                    $
+                    (a.) Mean = 267 days <br>
+                    The percentage of pregnancies last more than 267 days is about 50%
+                    <br><br>
+                    (b.) Between 267 and 277 is 1 standard deviation above the mean <br>
+                    The percentage of pregnancies that last between 267 and 277 days is 34%
+                    <br><br>
+                    (c.) Less than 237 days is less than 3 standard deviations below the mean <br>
+                    The percentage of pregnancies that last less than 237 days is 0.15%
+                    <br><br>
+                    (d.) Between 247 and 287 is 2 standard deviations above the mean <br>
+                    The percentage of pregnancies that last between 247 and 287 days is 95%
+                    <br><br>
+                    (e.) Longer than 287 days is more than 2 standard deviations above the mean <br>
+                    The percentage of pregnancies that last longer than 287 days is 2.35% + 0.15% = 2.5%
+                    <br><br>
+                    (f.) Longer than 297 days is more than 3 standard deviations above the mean <br>
+                    The percentage of pregnancies that last longer than 287 days is 0.15%
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (60.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS60')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS60">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-reasoning.appspot.com/DescriptiveStatistics/measuresShape.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (61.) The accompanying histogram shows the number of runs scored by baseball teams for three seasons.
+                <br><br>
+                <img src="images/MeasuresShape/Questions/Number61.png" alt="Number 61">
+                <br><br>
+                The distribution is roughly unimodal and​ symmetric, with a mean of 689 and a standard deviation of 69
+                runs. <br>
+                An interval one standard deviation above and below the mean is marked on the histogram. Assume the
+                values in a bin are distributed uniformly. <br>
+                For​ example, if the leftmost line is at the​ midpoint, then half of that​ bin's values are below the
+                line and half are above.
+                <br><br>
+                (a.) According to the Empirical​ Rule, approximately what percent of the data should fall in the
+                interval from 620 to 758 ​(that is, one standard deviation above and below the​ mean)?
+                <br><br>
+                (b.) Use the histogram to estimate the actual percent of teams that fall in this interval. <br>
+                How did your estimate compare to the value predicted by the Empirical​ Rule?
+                <br><br>
+                (c.) Between what two values would you expect to find about​ 95% of the​ teams?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS61')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS61">
+                    <br>
+                    (a.) Approximately 68% of the data should fall in the interval from 620 to 758.
+                    <br><br>
+                    (b.) 69​% of the data falls in the interval from 620 to 758. <br>
+                    The estimate is very close to the value predicted by the Empirical Rule.
+                    <br><br>
+                    $
+                    (c.) \\[3ex]
+                    \underline{Empirical\;\;Rule} \\[3ex]
+                    \bar{x} = 689\;runs \\[3ex]
+                    s = 69\;runs \\[3ex]
+                    \bar{x} - 2s \\[3ex]
+                    = 689 - 2(69) \\[3ex]
+                    = 689 - 138 \\[3ex]
+                    = 551 \\[3ex]
+                    \bar{x} + 2s \\[3ex]
+                    = 689 + 2(69) \\[3ex]
+                    = 689 + 138 \\[3ex]
+                    = 827 \\[3ex]
+                    $
+                    You expect to find about​ 95% of the teams between the two values 551 and 827.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (62.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS62')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS62">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (63.)
+                <button class="solutions" onclick="solutions('solutionMS63')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS63">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (64.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS64')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS64">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (65.)
+                <button class="solutions" onclick="solutions('solutionMS65')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS65">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (66.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS66')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS66">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (67.)
+                <button class="solutions" onclick="solutions('solutionMS67')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS67">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (68.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS68')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS68">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (69.)
+                <button class="solutions" onclick="solutions('solutionMS69')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS69">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (70.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS70')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS70">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (71.)
+                <button class="solutions" onclick="solutions('solutionMS71')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS71">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (72.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS72')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS72">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (73.)
+                <button class="solutions" onclick="solutions('solutionMS73')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS73">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (74.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS74')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS74">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (75.)
+                <button class="solutions" onclick="solutions('solutionMS75')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS75">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (76.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMS76')">Show/Hide Answer</button>
+                <div class="result" id="solutionMS76">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-0C49NC77DX' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018 Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages9.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>
