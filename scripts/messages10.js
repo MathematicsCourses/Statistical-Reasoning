@@ -5,7 +5,7 @@
     www.chukwuemeka-samuel.appspot.com
     www.samdomforpeace.com
     www.samdomforpeace.appspot.com
-    https://statistical-reasoning.appspot.com/
+    https://mathematicscourses.github.io/Statistical-Reasoning/
     message 10
 */
 
@@ -52,37 +52,33 @@ var messages10 = dailyMessage[day - 1];
 document.getElementById('messages10').innerHTML = messages10;
 */
 
-var presentDate,
-    presentHour,
-    greeting;
+var presentDate, presentHour, greeting;
 
 presentDate = new Date();
 presentDate.getDate();
 
 presentHour = presentDate.getHours();
 
-
 if (presentHour < 12) {
-    greeting = "Good morning.";
+  greeting = "Good morning.";
 } else if (presentHour >= 12 && presentHour < 16) {
-    greeting = "Good afternoon.";
+  greeting = "Good afternoon.";
 } else if (presentHour >= 16 && presentHour <= 24) {
-    greeting = "Good evening.";
+  greeting = "Good evening.";
 }
 
 document.getElementById("greetings").innerHTML = greeting;
 
-
 // Solutions to the Questions
 function solutions(solution) {
-    var e = document.getElementById(solution);
-    if (e.style.display === 'block' || e.style.display ==='') e.style.display = 'none';
-    else e.style.display = 'block';
+  var e = document.getElementById(solution);
+  if (e.style.display === "block" || e.style.display === "") e.style.display = "none";
+  else e.style.display = "block";
 }
 
 // Answers to the Questions
 function answers(answer) {
-    var e = document.getElementById(answer);
-    if (e.style.display === 'block' || e.style.display ==='') e.style.display = 'none';
-    else e.style.display = 'block';
+  var e = document.getElementById(answer);
+  if (e.style.display === "block" || e.style.display === "") e.style.display = "none";
+  else e.style.display = "block";
 }
