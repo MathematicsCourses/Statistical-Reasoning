@@ -3,9 +3,6 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
-    www.inferential-statistics.appspot.com/Projects.html
     message 12
 */
 

@@ -3,8 +3,7 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
+    
     https://mathematicscourses.github.io/Statistical-Reasoning/
     https://mathematicscourses.github.io/Statistical-Reasoning/GradesCalculators.html
 */
